@@ -144,6 +144,25 @@ main h3 {
     margin: 15px 0;
 }
 
+.main-story figure {
+    margin: 15px 0;
+    border: 1cap solid #e8eef1;
+    padding: 5px;
+}
+
+.main-story figure img {
+    display: block;
+    margin: 0;
+}
+
+
+.main-story figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
 /* Makes paragraphs easier to read */
 p {
     line-height: 1.5;
