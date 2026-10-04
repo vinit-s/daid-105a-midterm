@@ -1,0 +1,173 @@
+/* --------------------
+   WHOLE PAGE
+-------------------- */
+
+body {
+    margin: 0;
+    background-color: #e8eef1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/* Keeps the website from becoming too wide */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* --------------------
+   HEADER
+-------------------- */
+
+header {
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    color: #168caf;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+/* -----------------------
+   NAV BAR - USE FLEXBOX
+-------------------------*/
+
+nav {
+    display: flex;
+    background-color: #333333;
+}
+
+/* Each link takes up the same amount of space */
+nav a {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Change color when the mouse is over a link */
+nav a:hover {
+    background-color: #168caf;
+}
+
+/* Phones and small tablets: stack the nav links in rows of three */
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav a {
+        flex: 1 1 33%; /* three links per row */
+    }
+    /* Also adjust the header for small screens */
+    header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    }
+}
+
+/* --------------------
+   HERO SECTION
+-------------------- */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+/* Box that sits over the hero image */
+.hero-text {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 280px;
+    padding: 20px;
+    background-color: #e76f20;
+    color: white;
+    font-size: 16px;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/* Phones and small tablets: stack the hero text */
+@media (max-width: 600px) {
+    .hero-text {
+        position: static;
+        width: auto;
+        padding: 15px;
+    }
+}
+/* --------------------
+   MAIN CONTENT
+-------------------- */
+
+main {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+}
+
+/* Left side is 2x larger */
+.main-story {
+    flex: 2;
+}
+
+/* Right side is smaller */
+.tips {
+    flex: 1;
+}
+
+/* Repeat the same heading style */
+main h2 {
+    color: #168caf;
+    margin-top: 0;
+}
+
+/* Make Heading3 Orange */
+main h3 {
+    color: #e76f20;
+}
+
+/* Image inside the article */
+.main-story img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* Makes paragraphs easier to read */
+p {
+    line-height: 1.5;
+}
+
+/* Phones and small tablets: stack the panels */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+footer {
+    background-color: #168caf;
+    color: white;
+    padding: 15px 25px;
+}
+
+footer p {
+    margin: 0;
+}
